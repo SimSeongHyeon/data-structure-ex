@@ -4,7 +4,7 @@
 
 struct Node_ {
 	int data;
-	struct Node* pointer;
+	struct Node_* pointer;
 };
 typedef struct Node_ Node;
 

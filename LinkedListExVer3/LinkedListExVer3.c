@@ -8,7 +8,7 @@ struct Node_ {
 };
 typedef struct Node_ Node;
 
-//Insert the data to front of linked list
+//Insert the data to head of linked list
 void Insert(Node** phead, int data) {
 	Node* temp = (Node*)malloc(sizeof(Node));
 
