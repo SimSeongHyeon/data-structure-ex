@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedListExVer2", "LinkedL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedListExVer3", "LinkedListExVer3\LinkedListExVer3.vcxproj", "{0469C739-8E66-497F-95C1-20A98E9190B0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedListExVer4", "LinkedListExVer4\LinkedListExVer4.vcxproj", "{FDA75B3C-392F-49C2-98B1-86A400A06EF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{0469C739-8E66-497F-95C1-20A98E9190B0}.Release|x64.Build.0 = Release|x64
 		{0469C739-8E66-497F-95C1-20A98E9190B0}.Release|x86.ActiveCfg = Release|Win32
 		{0469C739-8E66-497F-95C1-20A98E9190B0}.Release|x86.Build.0 = Release|Win32
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Debug|x64.ActiveCfg = Debug|x64
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Debug|x64.Build.0 = Debug|x64
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Debug|x86.ActiveCfg = Debug|Win32
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Debug|x86.Build.0 = Debug|Win32
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Release|x64.ActiveCfg = Release|x64
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Release|x64.Build.0 = Release|x64
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Release|x86.ActiveCfg = Release|Win32
+		{FDA75B3C-392F-49C2-98B1-86A400A06EF5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
