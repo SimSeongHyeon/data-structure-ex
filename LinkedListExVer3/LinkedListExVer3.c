@@ -9,21 +9,19 @@ struct Node_ {
 typedef struct Node_ Node;
 
 //Insert the data to front of linked list
-Node* Insert(Node* head, int data) {
+void Insert(Node** phead, int data) {
 	Node* temp = (Node*)malloc(sizeof(Node));
 
 	temp->data = data;
 
-	if (head == NULL) {
+	if (*phead == NULL) {
 		temp->pointer = NULL;
 	}
 	else {
-		temp->pointer = head;
+		temp->pointer = *phead;
 	}
 
-	head = temp;
-	
-	return head;
+	*phead = temp;
 }
 
 void Print(Node* head) {
@@ -52,7 +50,7 @@ int main() {
 
 		scanf("%d", &data);
 
-		head = Insert(head, data);
+		Insert(&head, data);
 
 		Print(head);
 	}

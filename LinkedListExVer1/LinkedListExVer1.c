@@ -10,7 +10,7 @@ typedef struct Node_ Node;
 
 Node* head;
 
-//Insert data to linked list
+//Insert the data to front of linked list
 void Insert(int data) {
 	Node* temp = (Node*)malloc(sizeof(Node));
 
