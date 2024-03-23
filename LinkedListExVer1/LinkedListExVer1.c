@@ -21,6 +21,7 @@ void Insert(int data) {
 	head = temp;
 }
 
+
 //Print numbers of current linked list
 void Print() {
 	Node* temp = head;
