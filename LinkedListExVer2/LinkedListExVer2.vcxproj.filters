@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedListExVer2.c">
+    <ClCompile Include="LinkedList_Insert_Head_Local.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

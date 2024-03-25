@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0469c739-8e66-497f-95c1-20a98e9190b0}</ProjectGuid>
-    <RootNamespace>LinkedListExVer3</RootNamespace>
+    <ProjectGuid>{eced1233-70e7-4bae-a7c3-cede56023922}</ProjectGuid>
+    <RootNamespace>LinkedListReverse</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>LinkedList_Insert_Front_DoublePointer</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList_Insert_Front_DoublePointer.c" />
+    <ClCompile Include="LinkedList_Reverse.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

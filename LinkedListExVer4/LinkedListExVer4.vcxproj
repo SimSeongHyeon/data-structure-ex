@@ -24,6 +24,7 @@
     <ProjectGuid>{fda75b3c-392f-49c2-98b1-86a400a06ef5}</ProjectGuid>
     <RootNamespace>LinkedListExVer4</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>LinkedList_Insert_Behind</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedListExVer4.c" />
+    <ClCompile Include="LinkedList_Insert_Behind.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
