@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /*
-Insert data into index of linked list
+Insert data into specific index of linked list
 */
 
 struct Node_ {
