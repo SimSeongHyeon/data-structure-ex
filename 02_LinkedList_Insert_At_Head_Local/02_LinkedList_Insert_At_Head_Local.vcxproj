@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{eced1233-70e7-4bae-a7c3-cede56023922}</ProjectGuid>
-    <RootNamespace>LinkedListReverse</RootNamespace>
+    <ProjectGuid>{23ca8b41-7ac1-4f9c-97e5-0874bc1d88a8}</ProjectGuid>
+    <RootNamespace>My02LinkedListInsertAtHeadLocal</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList_Reverse.c" />
+    <ClCompile Include="02_LinkedList_Insert_At_Head_Local.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

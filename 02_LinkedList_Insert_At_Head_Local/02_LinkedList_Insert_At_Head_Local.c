@@ -8,39 +8,22 @@ struct Node_ {
 };
 typedef struct Node_ Node;
 
-void Insert(Node** phead, int data) {
+//Insert the data to head of linked list
+Node* Insert(Node* head, int data) {
 	Node* temp = (Node*)malloc(sizeof(Node));
 
 	temp->data = data;
 
-	if (*phead == NULL) {
+	if (head == NULL) {
 		temp->pointer = NULL;
 	}
 	else {
-		temp->pointer = *phead;
+		temp->pointer = head;
 	}
 
-	*phead = temp;
-}
+	head = temp;
 
-void Reverse(Node** phead) {
-	Node* prev, * cur, * next;
-
-	prev = NULL;
-
-	cur = *phead;
-
-	while (cur != NULL) {
-		next = cur->pointer;
-
-		cur->pointer = prev;
-
-		prev = cur;
-
-		cur = next;
-	}
-
-	*phead = prev;
+	return head;
 }
 
 void Print(Node* head) {
@@ -48,6 +31,7 @@ void Print(Node* head) {
 
 	while (head != NULL) {
 		printf("%d ", head->data);
+
 		head = head->pointer;
 	}
 
@@ -68,12 +52,8 @@ int main() {
 
 		scanf("%d", &data);
 
-		Insert(&head, data);
+		head = Insert(head, data);
 
 		Print(head);
 	}
-
-	Reverse(&head);
-
-	Print(head);
 }

@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0469c739-8e66-497f-95c1-20a98e9190b0}</ProjectGuid>
-    <RootNamespace>LinkedListExVer3</RootNamespace>
+    <ProjectGuid>{5546ea41-5d28-4058-9e6e-29cf0eb1683d}</ProjectGuid>
+    <RootNamespace>My01LinkedListInsertAtHeadGlobal</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>LinkedList_Insert_Front_DoublePointer</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList_Insert_Front_DoublePointer.c" />
+    <ClCompile Include="01_LinkedList_Insert_At_Head_Global.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

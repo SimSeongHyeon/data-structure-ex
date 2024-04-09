@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList_Reverse.c">
+    <ClCompile Include="02_LinkedList_Insert_At_Head_Local.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

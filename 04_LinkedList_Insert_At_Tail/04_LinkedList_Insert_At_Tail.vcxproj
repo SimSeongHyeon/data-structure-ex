@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a6434e37-711c-4a81-9a4e-ba6872fec95b}</ProjectGuid>
-    <RootNamespace>LinkedListExVer5</RootNamespace>
+    <ProjectGuid>{ad3d4d21-b221-4f22-b9a4-4073036e4122}</ProjectGuid>
+    <RootNamespace>My04LinkedListInsertAtTail</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>LinkedList_Insert_Specific_Index</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList_Insert_Specific_Index.c" />
+    <ClCompile Include="04_LinkedList_Insert_At_Tail.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

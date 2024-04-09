@@ -8,22 +8,39 @@ struct Node_ {
 };
 typedef struct Node_ Node;
 
-//Insert the data to front of linked list
-Node* Insert(Node* head, int data) {
+void Insert(Node** phead, int data) {
 	Node* temp = (Node*)malloc(sizeof(Node));
 
 	temp->data = data;
 
-	if (head == NULL) {
+	if (*phead == NULL) {
 		temp->pointer = NULL;
 	}
 	else {
-		temp->pointer = head;
+		temp->pointer = *phead;
 	}
 
-	head = temp;
-	
-	return head;
+	*phead = temp;
+}
+
+void Reverse(Node** phead) {
+	Node* prev, * cur, * next;
+
+	prev = NULL;
+
+	cur = *phead;
+
+	while (cur != NULL) {
+		next = cur->pointer;
+
+		cur->pointer = prev;
+
+		prev = cur;
+
+		cur = next;
+	}
+
+	*phead = prev;
 }
 
 void Print(Node* head) {
@@ -31,7 +48,6 @@ void Print(Node* head) {
 
 	while (head != NULL) {
 		printf("%d ", head->data);
-
 		head = head->pointer;
 	}
 
@@ -52,8 +68,14 @@ int main() {
 
 		scanf("%d", &data);
 
-		head = Insert(head, data);
+		Insert(&head, data);
 
 		Print(head);
 	}
+
+	Reverse(&head);
+
+	printf("Resversed ");
+
+	Print(head);
 }
