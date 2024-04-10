@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{43acaa93-2a59-475b-b2c4-875c892c54b3}</ProjectGuid>
-    <RootNamespace>My06LinkedListReverse</RootNamespace>
+    <ProjectGuid>{13d85608-a6b0-4eea-b346-d865f0a2ad0c}</ProjectGuid>
+    <RootNamespace>My06LinkedLIstDelete</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="06_LinkedList_Reverse.c" />
+    <ClCompile Include="06_LinkedList_Delete.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
