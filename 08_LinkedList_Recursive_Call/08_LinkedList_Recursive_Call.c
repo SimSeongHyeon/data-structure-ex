@@ -72,8 +72,24 @@ void Delete(Node** phead, int index) {
 	free(pointing);
 }
 
-void Reverse() {
+void Reverse(Node** phead) {
+	Node* pointing, * prev, * next;
 
+	prev = NULL;
+
+	pointing = *phead;
+
+	while (pointing != NULL) {
+		next = pointing->pointer;
+
+		pointing->pointer = prev;
+
+		prev = pointing;
+
+		pointing = next;
+	}
+
+	*phead = prev;
 }
 
 void ReversePrint() {
@@ -136,6 +152,8 @@ int main() {
 				break;
 
 			case 4:
+				Reverse(&head);
+				printf("Reverse complete.");
 				break;
 
 			case 5:
