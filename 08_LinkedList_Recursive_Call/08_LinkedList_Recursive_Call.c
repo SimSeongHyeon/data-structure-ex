@@ -38,8 +38,8 @@ void Insert(Node** phead, int index, int data) {
 	pointing->pointer = temp;
 }
 
-void Print(Node* head) {
-	printf("List : ");
+void Print(Node* p) {
+	/*printf("List : ");
 
 	while (head != NULL) {
 		printf("%d ", head->data);
@@ -47,7 +47,16 @@ void Print(Node* head) {
 		head = head->pointer;
 	}
 
-	printf("\n");
+	printf("\n");*/
+
+	//Recursive call
+	if (p== NULL) {
+		return;
+	}
+
+	printf("%d ", p->data);
+
+	Print(p->pointer);
 }
 
 void Delete(Node** phead, int index) {
@@ -73,7 +82,7 @@ void Delete(Node** phead, int index) {
 }
 
 void Reverse(Node** phead) {
-	Node* pointing, * prev, * next;
+	/*Node* pointing, * prev, * next;
 
 	prev = NULL;
 
@@ -89,11 +98,32 @@ void Reverse(Node** phead) {
 		pointing = next;
 	}
 
-	*phead = prev;
+	*phead = prev;*/
+
+	//Recursive call
+	Node* current = *phead;
+
+	if (current->pointer == NULL) {
+		return;
+	}
+
+	Reverse(&(current->pointer));
+
+	Node* next = current->pointer;
+
+	next->pointer = current;
+
+	current->pointer = NULL;
 }
 
-void ReversePrint() {
+void ReversePrint(Node* head) {
+	if (head == NULL) {
+		return;
+	}
 
+	ReversePrint(head->pointer);
+	
+	printf("%d ", head->data);
 }
 
 int main() {
@@ -108,12 +138,14 @@ int main() {
 	scanf("%d", &length);
 
 	do {
-		printf("Enter the command\n");
 		printf("1 : Insert\n");
 		printf("2 : Print\n");
 		printf("3 : Delete\n");
 		printf("4 : Reverse\n");
-		printf("5 : ReversePrint\n");		
+		printf("5 : ReversePrint\n");
+		printf("0 : Exit\n");
+
+		printf("Enter the command : ");
 
 		scanf("%d", &command);
 
@@ -134,7 +166,9 @@ int main() {
 				break;
 			
 			case 2:
+				printf("List : ");
 				Print(head);
+				printf("\n");
 				break;
 
 			case 3:
@@ -153,7 +187,7 @@ int main() {
 
 			case 4:
 				Reverse(&head);
-				printf("Reverse complete.");
+				printf("Reverse complete.\n");
 				break;
 
 			case 5:
